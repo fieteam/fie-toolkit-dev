@@ -1,0 +1,50 @@
+{
+  "name": "@ali/developing-fie-plugin-name",
+  "version": "1.0.0",
+  "description": "<{{%=fiePluginName%}}> description",
+  "main": "index.js",
+  "fieOption": {
+    "icon": "",
+    "type": "toolkit",
+    "update": false,
+    "moduleName": "@ali/<{{%=fiePluginName%}}>"
+  },
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "cross-spawn": "~4.0.0",
+    "debug": "^2.2.0",
+    "open": "0.0.5",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "~6.0.2",
+    "eslint-plugin-react": "~5.0.1",
+    "eslint": "~2.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.alibaba-inc.com:fie/<{{%=fiePluginName %}}>.git"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
+  },
+  "author": {
+    "name": "<{{%=author%}}>",
+    "email": "<{{%=email%}}>"
+  },
+  "maintainers": [
+    {
+      "name": "<{{%=author%}}>",
+      "email": "<{{%=email%}}>"
+    }
+  ],
+  "changeLog": [
+    {
+      "version": "1.0.0",
+      "log": [
+        "新增初始化模板功能"
+      ]
+    }
+  ],
+  "keyword": []
+}

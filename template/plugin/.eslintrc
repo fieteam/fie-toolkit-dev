@@ -1,0 +1,22 @@
+{
+  "extends": "@ali/eslint-config-ais",
+  "parser": "babel-eslint",
+  "root": true,
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "globals": {
+    "KISSY": true,
+    "TB": true,
+    "JSTracker": true,
+    "JSTracker2": true,
+    "$": true,
+    // Kimi 全局变量
+    "define": true,
+    "require": true,
+    "module": true
+  }
+  }
+}
