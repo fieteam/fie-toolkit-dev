@@ -1,6 +1,6 @@
 {
   "name": "fie-toolkit-dev",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "fie-toolkit-dev description",
   "main": "index.js",
   "fieOption": {
@@ -45,6 +45,18 @@
       "version": "0.1.0",
       "log": [
         "模板初始化功能完成"
+      ]
+    },
+    {
+      "version": "0.1.1",
+      "log": [
+        "修复内外网切换问题"
+      ]
+    },
+    {
+      "version": "0.2.0",
+      "log": [
+        "允许进行内网&公网发布"
       ]
     }
   ],
