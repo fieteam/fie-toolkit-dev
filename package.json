@@ -1,6 +1,6 @@
 {
   "name": "fie-toolkit-dev",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "fie-toolkit-dev description",
   "main": "index.js",
   "fieOption": {
@@ -57,6 +57,12 @@
       "version": "0.2.0",
       "log": [
         "允许进行内网&公网发布"
+      ]
+    },
+    {
+      "version": "0.2.1",
+      "log": [
+        "对所有文件加入strict模式用来兼容node低版本"
       ]
     }
   ],
