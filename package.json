@@ -1,7 +1,7 @@
 {
   "name": "fie-toolkit-dev",
-  "version": "0.2.1",
-  "description": "fie-toolkit-dev description",
+  "version": "0.2.2",
+  "description": "开发FIE 套件 / 插件 的套件",
   "main": "index.js",
   "fieOption": {
     "icon": "",
@@ -63,6 +63,12 @@
       "version": "0.2.1",
       "log": [
         "对所有文件加入strict模式用来兼容node低版本"
+      ]
+    },
+    {
+      "version": "0.2.2",
+      "log": [
+        "修复所有软件都自动链接至@ali域下的问题"
       ]
     }
   ],
