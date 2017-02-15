@@ -11,9 +11,7 @@
     "reqwest": "~2.0.5"
   },
   "devDependencies": {
-    "babel-eslint": "~6.0.2",
-    "eslint-plugin-react": "~5.0.1",
-    "eslint": "~2.7.0",
+    "eslint-config-ali": "^1.0.0",
     "babel-cli": "~6.7.5",
     "babel-core": "~6.7.6",
     "babel-loader": "~6.2.4",
