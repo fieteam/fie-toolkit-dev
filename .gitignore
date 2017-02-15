@@ -7,3 +7,4 @@ mods/.sass-cache/
 .idea
 bower_components/
 build/
+npm-debug.log

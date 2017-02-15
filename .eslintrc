@@ -1,3 +1,9 @@
 {
-  "extends": "eslint-config-ali"
+  "extends": "eslint-config-ali",
+  "rules": {
+    "import/no-dynamic-require": "off",
+    // 除文件顶部外也可在其他位置 require, 有些地方需要动态获取路径才引入
+    "global-require": "off",
+    "require-yield": "off"
+  }
 }
