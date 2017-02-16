@@ -2,7 +2,7 @@
 
 const chalk = require('chalk');
 
-module.exports = function (fie) {
+module.exports = function* () {
   const help = [
     '',
     '<{{%=fiePluginName%}}> 使用帮助:  $ fie <{{%= fiePluginShortName %}}> [command]',

@@ -1,9 +1,9 @@
-/**
- */
-
 'use strict';
 
-module.exports = function (fie, options) {
-    // 执行完publish命令的流程后,再调用一下这个
-  options.callback && options.callback();
+const api = require('fie-api');
+
+const log = api.log('<{{%=fiePluginName%}}>');
+
+module.exports = function* () {
+  log.info('发布功能正在开发中...');
 };

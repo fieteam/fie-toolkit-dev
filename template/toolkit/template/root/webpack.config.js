@@ -1,14 +1,15 @@
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var DEV = process.env.DEV;
-var LIVELOAD = process.env.LIVELOAD;
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
+const DEV = process.env.DEV;
+const LIVELOAD = process.env.LIVELOAD;
 
 
-var config = {
+const config = {
   context: __dirname,
   entry: {
     app: [
       'babel-polyfill',
-      './src/app.js'
+      './src/app.jsx'
     ]
   },
   output: {

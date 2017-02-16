@@ -1,6 +1,7 @@
 'use strict';
 
 const path = require('path');
+
 const templateDir = path.resolve(__dirname, '../template/');
 const cwd = process.cwd();
 
@@ -11,7 +12,7 @@ function firstUpperCase(str) {
 function camelTrans(str, isBig) {
   let i = isBig ? 0 : 1;
   str = str.split('-');
-  for (; i < str.length; i++) {
+  for (; i < str.length; i += 1) {
     str[i] = firstUpperCase(str[i]);
   }
   return str.join('');

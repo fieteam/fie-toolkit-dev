@@ -2,13 +2,12 @@
 
 import React from 'react';
 import ReactDom from 'react-dom';
-import { Ajax } from './util/index';
+import { ajax } from './util/index';
 import './index.less';
 
 class Home extends React.Component {
 
   constructor(props) {
-
     super(props);
     this.state = {
       text: ''
@@ -16,8 +15,7 @@ class Home extends React.Component {
   }
 
   componentDidMount() {
-
-    Ajax('home', (json) => {
+    ajax('home', (json) => {
       this.setState({
         text: json.data
       });

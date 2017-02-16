@@ -33,7 +33,7 @@
   "keyword": [],
   "dependencies": {
     "chalk": "^1.1.3",
-    "fie-log": "^1.3.1"
+    "fie-api": "^1.3.5"
   },
   "devDependencies": {
     "eslint": "^3.15.0",
