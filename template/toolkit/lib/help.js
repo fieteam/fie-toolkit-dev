@@ -1,10 +1,9 @@
 'use strict';
 
-var chalk = require('chalk');
+const chalk = require('chalk');
 
-module.exports = function(fie) {
-
-  var help = [
+module.exports = function (fie) {
+  const help = [
     '',
     '<{{%=fiePluginName%}}> 使用帮助:  $ fie <{{%= fiePluginShortName %}}> [command]',
     '',
@@ -19,6 +18,5 @@ module.exports = function(fie) {
     ''
   ].join('\r\n');
 
-  process.stdout.write( chalk.green(help) );
-
+  process.stdout.write(chalk.green(help));
 };

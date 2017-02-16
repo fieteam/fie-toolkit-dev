@@ -1,7 +1,7 @@
 'use strict';
 
 var api = {
-  /*invoke*/
+  /* invoke*/
   home: ['/home', 'get']
 };
 

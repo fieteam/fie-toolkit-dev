@@ -1,13 +1,12 @@
 'use strict';
 
 
-var fs = require('fs');
-var path = require('path');
-var spawn = require('cross-spawn');
+const fs = require('fs');
+const path = require('path');
+const spawn = require('cross-spawn');
 
-module.exports = function(fie, options) {
-
-  var cli;
+module.exports = function (fie, options) {
+  let cli;
 
 
   if (!fs.existsSync(path.resolve(process.cwd(), 'webpack.config.js'))) {
@@ -19,10 +18,9 @@ module.exports = function(fie, options) {
   cli = spawn('./node_modules/.bin/webpack', [
     '--config',
     './webpack.config.js'
-  ], {stdio: 'inherit'});
+  ], { stdio: 'inherit' });
 
-  cli.on('close', function(status) {
-
+  cli.on('close', (status) => {
     if (status == 0) {
       fie.logSuccess('打包完成');
       options.callback && options.callback();

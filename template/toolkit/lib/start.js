@@ -1,16 +1,16 @@
 /**
  * 打开服务器
  */
+
 'use strict';
-var fs = require('fs');
-var path = require('path');
-var spawn = require('cross-spawn');
-var open = require('open');
 
-module.exports = function(fie, options) {
+const fs = require('fs');
+const path = require('path');
+const spawn = require('cross-spawn');
+const open = require('open');
 
-
-  var sdkConfig = fie.getModuleConfig();
+module.exports = function (fie, options) {
+  const sdkConfig = fie.getModuleConfig();
 
   if (!fs.existsSync(path.resolve(process.cwd(), 'webpack.config.js'))) {
     fie.logError('未发现 webpack.config.js 文件, 可以使用 fie add conf 添加对应版本 webpack 配置文件');
@@ -24,12 +24,12 @@ module.exports = function(fie, options) {
     './webpack.config.js',
     '--port',
     sdkConfig.port
-  ], {stdio: 'inherit'});
+  ], { stdio: 'inherit' });
 
   if (sdkConfig.open) {
-    //开服务器比较慢,给它留点时间buffer
-    setTimeout(function() {
-      open('http://127.0.0.1:' + sdkConfig.port + '/' + sdkConfig.openTarget);
+    // 开服务器比较慢,给它留点时间buffer
+    setTimeout(() => {
+      open(`http://127.0.0.1:${sdkConfig.port}/${sdkConfig.openTarget}`);
     }, 500);
   }
 

@@ -46,7 +46,7 @@ if (LIVELOAD) {
 
 if (!DEV) {
   // uglify
-  //css min
+  // css min
 }
 
 module.exports = config;

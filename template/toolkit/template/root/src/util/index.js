@@ -36,13 +36,13 @@ var tools = {
     var $token = document.getElementsByName('_tb_token_');
     return $token.length ? $token[0].value : '';
   },
-  isDaily(){
+  isDaily() {
     var host = window.location.host;
     return host.indexOf('daily') > -1;
   },
 
   getUrlParam: function(name) {
-    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+    var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)');
     var r = decodeURIComponent(window.location.search.substr(1)).match(reg);
     if (r != null) return unescape(r[2]);
     return null;
@@ -65,20 +65,20 @@ var tools = {
     var location = window.location;
     var hostname = location.hostname;
 
-    //本地 mock
+    // 本地 mock
     if (hostname === 'localhost' || hostname === '127.0.0.1' || hostname === 'local.place.daily.taobao.net') {
-      //使用本地代理
+      // 使用本地代理
       if (location.href.indexOf('proxyurl') > -1) {
         arr = '/data/' + type + '.json?proxyUrl=http://place.daily.taobao.net' + arr[0];
       } else {
-        arr = ['/data/' + type + '.json']
+        arr = ['/data/' + type + '.json'];
       }
     } else {
       if (!/^(http:\/\/|\/\/)/i.test(arr[0])) {
-        arr[0] = location.protocol + '//' + hostname + ((location.port && location.port != 80) ? ':' + location.port : '') + arr[0]
+        arr[0] = location.protocol + '//' + hostname + (location.port && location.port != 80 ? ':' + location.port : '') + arr[0];
       }
     }
-    //添加通用参数
+    // 添加通用参数
     if (arr[0].indexOf('?') === -1) {
       arr[0] += '?';
     } else {
@@ -90,37 +90,37 @@ var tools = {
     return arr;
   },
   isArray: function(object) {
-    return object instanceof Array
+    return object instanceof Array;
   },
   isWindow: function(obj) {
-    return obj != null && obj == obj.window
+    return obj != null && obj == obj.window;
   },
   isDocument: function(obj) {
-    return obj != null && obj.nodeType == obj.DOCUMENT_NODE
+    return obj != null && obj.nodeType == obj.DOCUMENT_NODE;
   },
   isObject: function(obj) {
-    return this._type(obj) == "object"
+    return this._type(obj) == 'object';
   },
   isFunction: function(fn) {
-    return this._type(fn) == "function"
+    return this._type(fn) == 'function';
   },
   isPlainObject: function(obj) {
-    return this.isObject(obj) && !this.isWindow(obj) && Object.getPrototypeOf(obj) == Object.prototype
+    return this.isObject(obj) && !this.isWindow(obj) && Object.getPrototypeOf(obj) == Object.prototype;
   },
   _type: function(obj) {
     var class2type = {};
     var toString = class2type.toString;
     return obj == null ? String(obj) :
-    class2type[toString.call(obj)] || "object"
+    class2type[toString.call(obj)] || 'object';
   },
   isString: function(str) {
-    return typeof str === 'string'
+    return typeof str === 'string';
   },
   extend: function(target, source) {
     target = target || {};
     source = source || {};
     for (var key in source) {
-      target[key] = source[key]
+      target[key] = source[key];
     }
     return target;
 
@@ -128,7 +128,7 @@ var tools = {
   namespace: function(name) {
     return function(v) {
       return name + '-' + v;
-    }
+    };
   }
 };
 
