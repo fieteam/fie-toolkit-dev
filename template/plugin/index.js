@@ -1,6 +1,10 @@
 'use strict';
 
+const help = require('./lib/help');
+const go = require('./lib/go');
+
 module.exports = {
-  help: require('./lib/help'),
-  go: require('./lib/go')
+  help,
+  go,
+  default: help
 };

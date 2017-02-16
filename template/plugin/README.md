@@ -1,27 +1,49 @@
 # <{{%=fiePluginName%}}>
 
+> 一句话描述插件作用
+
 ## 说明
 
-这里对你的套件进行简单描述, 比如适用哪些场景,使用了什么技术, 有什么特点
+说明一下插件的功能, 架构等
 
-## 用法
+## 使用场景
 
-### xxx功能
+描述一下插件的使用场景
 
-```
-fie <{{%=fiePluginShortName%}}> xxx
-```
-
-## fie.config.js 配置
+## 安装
 
 ```
-{
-    <{{%=fiePluginShortName%}}>: {
-        setting1: 'xxx',
-        setting2: 'yyy'
-    }    
+fie install plugin-<{{%=fiePluginShortName%}}>
+```
+
+## 参数配置
+
+```
+module.exports = {
+  /* 其他配置... */
+  <{{%=fiePluginShortName%}}>: {
+    a: 3
+  }
 }
 ```
 
 
+## 用法
+
+### 初始化 eslint 配置 
+
+#### 在命令行里面使用
+
+```
+$ fie <{{%=fiePluginShortName%}}> go
+$ fie <{{%=fiePluginShortName%}}> help
+```
+
+#### 在套件/插件里面使用
+
+```
+const fieModule = require('fie-api').module;
+const <{{%=fiePluginShortName%}}> = yield fieModule.get('plugin-<{{%=fiePluginShortName%}}>');
+yield <{{%=fiePluginShortName%}}>.go(fie, {clientArgs: ['some-args'], clientOptions: { a: 2, b: 2}});
+```
 
