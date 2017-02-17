@@ -6,7 +6,7 @@
   "fieOption": {
     "icon": "",
     "type": "toolkit",
-    "update": false,
+    "update": true,
     "moduleName": "fie-toolkit-dev"
   },
   "scripts": {
