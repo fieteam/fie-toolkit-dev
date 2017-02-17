@@ -1,6 +1,6 @@
 {
   "name": "fie-toolkit-dev",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "开发FIE 套件 / 插件 的套件",
   "main": "index.js",
   "fieOption": {
@@ -71,6 +71,14 @@
       "version": "0.2.2",
       "log": [
         "修复所有软件都自动链接至@ali域下的问题"
+      ]
+    },
+    {
+      "version": "0.3.0",
+      "log": [
+        "修复错误",
+        "调用新版fie接口",
+        "调整代码格式"
       ]
     }
   ],
