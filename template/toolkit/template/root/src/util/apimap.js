@@ -1,7 +1,7 @@
 'use strict';
 
-var api = {
-  /*invoke*/
+const api = {
+  /* invoke */
   home: ['/home', 'get']
 };
 

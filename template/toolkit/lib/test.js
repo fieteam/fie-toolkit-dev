@@ -1,7 +1,9 @@
 'use strict';
 
-module.exports = function(fie) {
+const api = require('fie-api');
 
-  fie.logWarn('报歉,单元测试功能还没实现');
+const log = api.log('<{{%=fiePluginName%}}>');
 
+module.exports = function* () {
+  log.info('测试功能正在开发中...');
 };

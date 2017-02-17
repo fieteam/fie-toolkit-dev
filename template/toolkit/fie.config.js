@@ -5,7 +5,7 @@
  *   笑斌 <joshuasui@163.com>>
  */
 module.exports = {
-  toolkit: "fie-toolkit-dev",
+  toolkit: 'fie-toolkit-dev',
   toolkitConfig: {
   },
   tasks: {

@@ -1,7 +1,5 @@
 # 忽略目录
 build/
-test/
-template/
 
 
 # node 覆盖率文件
