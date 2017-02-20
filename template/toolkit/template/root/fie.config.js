@@ -4,7 +4,7 @@ module.exports = {
     port: 9000,
     open: true,
     log: true,
-    openTarget: 'demo/index.html',
+    openTarget: 'demo/home.html',
     liveload: false
   }
 };
