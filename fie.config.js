@@ -5,7 +5,5 @@
  *   笑斌 <joshuasui@163.com>>
  */
 module.exports = {
-  toolkit: 'dev',
-  toolkitConfig: {},
-  tasks: {}
+  toolkit: 'dev'
 };
