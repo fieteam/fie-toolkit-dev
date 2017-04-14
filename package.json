@@ -1,6 +1,6 @@
 {
   "name": "fie-toolkit-dev",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "开发FIE 套件 / 插件 的套件",
   "main": "index.js",
   "fieOption": {
@@ -43,6 +43,12 @@
     }
   ],
   "changeLog": [
+    {
+      "version": "0.3.1",
+      "log": [
+        "修复发布 bug"
+      ]
+    },
     {
       "version": "0.1.0",
       "log": [
